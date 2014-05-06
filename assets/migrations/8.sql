@@ -1,0 +1,1 @@
+ALTER TABLE Movies ADD COLUMN Cast string;

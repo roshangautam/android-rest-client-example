@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/movie_row_padding"
+    android:paddingTop="@dimen/movie_row_padding">
+    
+    <!-- @drawable/small_movie_poster sourced from 
+         http://content8.flixster.com/movie/11/15/86/11158674_mob.jpg -->
+    <ImageView
+        android:id="@+id/ivPosterImage"
+        android:contentDescription="@string/movie_small_poster_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:maxHeight="@dimen/movie_row_poster_height"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:src="@drawable/small_movie_poster" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/movie_title_margin"
+        android:layout_toRightOf="@+id/ivPosterImage"
+        android:text="@string/default_movie_name"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:id="@+id/tvCast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivPosterImage"
+        android:layout_alignLeft="@+id/tvCriticsScore"
+        android:layout_below="@+id/tvCriticsScore"
+        android:gravity="bottom"
+        android:text="@string/default_movie_cast_list"
+        android:textSize="@dimen/small_text_size" />
+
+    <TextView
+        android:id="@+id/tvCriticsScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTitle"
+        android:layout_below="@+id/tvTitle"
+        android:text="@string/default_movie_critic_score"
+        android:textSize="@dimen/small_text_size" />
+
+</RelativeLayout>

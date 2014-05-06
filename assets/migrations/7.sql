@@ -1,0 +1,1 @@
+ALTER TABLE Movies ADD COLUMN MovieId LONG;

@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".BoxOfficeDetailActivity" >
+    
+    <!-- @drawable/large_movie_poster sourced from 
+         http://content8.flixster.com/movie/11/15/86/11158674_pro.jpg -->
+    <ImageView
+        android:id="@+id/ivPosterImage"
+        android:contentDescription="@string/movie_poster_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:maxHeight="@dimen/movie_poster_height"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:src="@drawable/large_movie_poster" />
+
+    <TextView
+        android:id="@+id/tvAudienceScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCriticsScore"
+        android:layout_below="@+id/tvCriticsScore"
+        android:layout_marginTop="5dp"
+        android:text="@string/default_movie_audience_score"
+        android:textSize="@dimen/small_text_size" />
+
+    <TextView
+        android:id="@+id/tvCriticsScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTitle"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/ivPosterImage"
+        android:text="@string/default_movie_critic_score"
+        android:textSize="@dimen/small_text_size" />
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivPosterImage"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/ivPosterImage"
+        android:text="@string/default_movie_name"
+        android:textSize="@dimen/text_size" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivPosterImage"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+			<TextView
+		        android:id="@+id/tvCast"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/default_movie_cast_list"
+		        android:textSize="@dimen/small_text_size" />
+            
+            <TextView
+                android:id="@+id/tvCriticsConsensus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/default_movie_critic_consensus" 
+                android:textSize="@dimen/small_text_size"/>
+
+            <TextView
+                android:id="@+id/tvSynopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/default_movie_synopsis"
+                android:textSize="@dimen/small_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

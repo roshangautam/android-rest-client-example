@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BoxOffice</string>
+    <string name="movie_small_poster_description">Small Poster</string>
+    <string name="default_movie_name">The Dark Knight</string>
+    <string name="default_movie_critic_score">Critic Score: 98%</string>
+    <string name="default_movie_cast_list">Christian Bale, Joseph-Gordon Levitt</string>
+    <string name="default_movie_audience_score">Audience Score: 98%</string>
+    <string name="default_movie_critic_consensus">This is an excellent movie that has action and romance</string>
+    <string name="default_movie_synopsis">This is a story about a protagonist defeating an antagonist</string>
+    <string name="title_activity_movie_details">MovieDetailsActivity</string>
+    <string name="movie_poster_description">Large Poster</string>
+    <string name="title_activity_movie_list">MovieListActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
